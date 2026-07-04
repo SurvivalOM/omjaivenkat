@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Omjai Venkat — Author &amp; Founder of Future Proofing Lifestyle</title>
+<meta name="description" content="Omjai Venkat is the author of ProFit, Hu-Kno-Mi and the FPL book family, and founder of the Future Proofing Lifestyle movement — helping people create, protect and transfer Happiness, Health and Wealth." />
+<meta property="og:title" content="Omjai Venkat — Author &amp; Founder" />
+<meta property="og:description" content="Author of ProFit and the FPL book family. Founder of the Future Proofing Lifestyle movement. Every book free to read." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="founder.jpg" />
+<link rel="icon" type="image/png" href="fpl-emblem.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#14223F; --navy-2:#1B2C54; --navy-3:#22335f;
+    --gold:#C6A249; --gold-lt:#E3C778; --gold-dk:#A8842F;
+    --cream:#F4F1E8; --cream-2:#D9D5C7; --muted:#9DA8C2;
+    --serif:'Cormorant Garamond',Georgia,serif;
+    --sans:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--cream);line-height:1.65;background:var(--navy);
+    background-image:radial-gradient(1200px 700px at 50% -15%, #243a6b 0%, var(--navy-2) 42%, var(--navy) 80%);
+    -webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:600;font-size:15px;padding:12px 22px;border-radius:30px;text-decoration:none;cursor:pointer;transition:.18s;border:1px solid transparent;white-space:nowrap}
+  .btn-gold{background:linear-gradient(180deg,var(--gold-lt),var(--gold));color:var(--navy);box-shadow:0 8px 24px rgba(198,162,73,.28)}
+  .btn-gold:hover{transform:translateY(-1px);box-shadow:0 12px 30px rgba(198,162,73,.4)}
+  .btn-ghost{background:rgba(255,255,255,.04);border-color:rgba(198,162,73,.5);color:var(--gold-lt)}
+  .btn-ghost:hover{border-color:var(--gold);background:rgba(198,162,73,.1)}
+  .eyebrow{font-size:12px;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold-lt)}
+  /* nav */
+  nav{position:sticky;top:0;z-index:50;background:rgba(16,26,50,.78);backdrop-filter:blur(10px);border-bottom:1px solid rgba(198,162,73,.16)}
+  nav .row{display:flex;align-items:center;gap:18px;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex:none}
+  .brand img{width:34px;height:34px;object-fit:contain}
+  .brand b{font-family:var(--serif);font-weight:600;font-size:18px;color:var(--cream)}
+  .brand b span{color:var(--gold)}
+  .navlinks{display:flex;align-items:center;gap:24px;margin-left:auto}
+  .navlinks a.lnk{font-size:14px;color:var(--cream-2);text-decoration:none;transition:.15s}
+  .navlinks a.lnk:hover{color:var(--gold-lt)}
+  /* hero */
+  .hero{padding:70px 0 54px}
+  .hero .grid{display:flex;gap:42px;align-items:center;justify-content:center;flex-wrap:wrap}
+  .hero .photo{flex:none;width:230px}
+  .hero .photo img{width:100%;height:auto;border-radius:20px;border:1px solid rgba(198,162,73,.45);box-shadow:0 18px 50px rgba(0,0,0,.55)}
+  .hero .intro{max-width:560px}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:56px;line-height:1.05;color:var(--cream);margin:10px 0 14px}
+  .hero h1 span{color:var(--gold)}
+  .hero p.sub{font-size:19px;color:var(--cream-2);margin-bottom:28px}
+  .hero .micro{margin-top:14px;font-size:13px;color:var(--muted)}
+  /* section shell */
+  section.block{padding:54px 0}
+  .sec-head{text-align:center;max-width:680px;margin:0 auto 36px}
+  .sec-head h2{font-family:var(--serif);font-weight:600;font-size:36px;color:var(--cream);margin:8px 0 12px}
+  .sec-head p{font-size:16px;color:var(--cream-2)}
+  /* books */
+  .books{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  a.bk{display:block;background:rgba(10,18,38,.45);border:1px solid rgba(198,162,73,.2);border-radius:14px;padding:18px 16px;text-align:center;text-decoration:none;transition:.18s}
+  a.bk:hover{transform:translateY(-3px);border-color:rgba(198,162,73,.55);box-shadow:0 12px 30px rgba(0,0,0,.4)}
+  .bk img{width:100%;max-width:130px;height:auto;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,.45);margin-bottom:12px}
+  .bk h4{font-family:var(--serif);font-weight:600;font-size:18px;color:var(--cream);line-height:1.15;margin-bottom:4px}
+  .bk small{font-size:11px;letter-spacing:.5px;text-transform:uppercase;color:var(--gold)}
+  .bk .read{display:block;margin-top:10px;font-size:12px;color:var(--gold-lt)}
+  .books-note{text-align:center;margin-top:24px;font-size:14px;color:var(--cream-2)}
+  /* movement */
+  .move{background:rgba(10,18,38,.4);border:1px solid rgba(198,162,73,.2);border-radius:22px;padding:44px 30px;text-align:center}
+  .cpt{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin:8px 0 22px}
+  .cpt div{font-family:var(--serif);font-size:26px;color:var(--gold-lt)}
+  .cpt div small{display:block;font-family:var(--sans);font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-top:3px}
+  .move p.lead{font-size:17px;color:var(--cream-2);max-width:720px;margin:0 auto 26px}
+  /* story */
+  .story{max-width:760px;margin:0 auto;background:rgba(34,51,95,.45);border:1px solid rgba(198,162,73,.22);border-radius:20px;padding:38px 34px}
+  .story p{font-size:16.5px;color:var(--cream-2);margin-bottom:16px}
+  .story p:last-child{margin-bottom:0}
+  .story blockquote{font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.5;color:var(--cream);border-left:3px solid var(--gold);padding-left:18px;margin:22px 0}
+  /* youtube band */
+  .ctaband{text-align:center;background:linear-gradient(180deg,rgba(198,162,73,.12),rgba(198,162,73,.05));border:1px solid rgba(198,162,73,.35);border-radius:22px;padding:46px 28px}
+  .ctaband h2{font-family:var(--serif);font-weight:600;font-size:38px;color:var(--cream);margin-bottom:10px}
+  .ctaband p{font-size:16px;color:var(--cream-2);margin-bottom:24px}
+  /* footer */
+  footer{border-top:1px solid rgba(198,162,73,.16);margin-top:40px;padding:34px 0;text-align:center;color:var(--muted);font-size:13px;line-height:1.7}
+  footer .fmission{color:var(--gold);opacity:.85;font-family:var(--serif);font-size:16px;font-style:italic;margin-bottom:8px}
+  footer a{color:var(--cream-2);text-decoration:none;margin:0 9px}
+  footer a:hover{color:var(--gold-lt)}
+  @media(max-width:860px){
+    .books{grid-template-columns:repeat(2,1fr)}
+    .hero h1{font-size:40px} .sec-head h2{font-size:29px} .ctaband h2{font-size:28px}
+    .hero .grid{flex-direction:column;text-align:center} .hero .photo{width:180px}
+    .navlinks .lnk{display:none} .story{padding:30px 22px}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap row">
+    <a class="brand" href="index.html"><img src="fpl-emblem.png" alt="FPL emblem" /><b>Omjai <span>Venkat</span></b></a>
+    <div class="navlinks">
+      <a class="lnk" href="#books">The Books</a>
+      <a class="lnk" href="#movement">The Movement</a>
+      <a class="lnk" href="#story">My Story</a>
+      <a class="lnk" href="#youtube">YouTube</a>
+      <a class="btn btn-gold" href="https://futureproofinglifestyle.com">Read my books free</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap grid">
+    <div class="photo"><img src="founder.jpg" alt="Omjai Venkat" /></div>
+    <div class="intro">
+      <div class="eyebrow">Author · Founder · Future Proofer</div>
+      <h1>Omjai <span>Venkat</span></h1>
+      <p class="sub">Author of <b>ProFit</b> and the FPL book family, and founder of the <b>Future Proofing Lifestyle</b> movement — helping any of us create, protect and transfer the three things that decide a life: Happiness, Health &amp; Wealth.</p>
+      <a class="btn btn-gold" href="https://futureproofinglifestyle.com">Read my books free →</a>
+      <p class="micro">Every book free to read or hear · A movement, not a program</p>
+    </div>
+  </div>
+</header>
+
+<section class="block" id="books">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The Guiding Lights</div>
+      <h2>The books</h2>
+      <p>Written for the movement, never to make money — every chapter is free to read or listen to inside the Future Proofing Lifestyle volunteer area.</p>
+    </div>
+    <div class="books">
+      <a class="bk" href="https://futureproofinglifestyle.com/#books"><img src="cover-hukonomi.jpg" alt="Hu-Kno-Mi cover" /><h4>Hu-Kno-Mi</h4><small>The 13 Guiding Lights</small><span class="read">Read free →</span></a>
+      <a class="bk" href="https://futureproofinglifestyle.com/#books"><img src="cover-goodmoney.jpg" alt="Good Money Bad Money cover" /><h4>Good Money, Bad Money</h4><small>Wealth, honestly</small><span class="read">Read free →</span></a>
+      <a class="bk" href="https://futureproofinglifestyle.com/#books"><img src="cover-2questions.jpg" alt="Two Questions cover" /><h4>2 Questions</h4><small>Clarity</small><span class="read">Read free →</span></a>
+      <a class="bk" href="https://futureproofinglifestyle.com/#books"><img src="cover-profit.jpg" alt="ProFit cover" /><h4>ProFit</h4><small>Professional fitness</small><span class="read">Read free →</span></a>
+    </div>
+    <p class="books-note">Print and Kindle editions arrive as each book publishes — the free reading never goes away.</p>
+  </div>
+</section>
+
+<section class="block" id="movement">
+  <div class="wrap">
+    <div class="move">
+      <div class="eyebrow">The movement</div>
+      <div class="cpt">
+        <div>Create<small>bring it into being</small></div>
+        <div>Protect<small>guard what you build</small></div>
+        <div>Transfer<small>pass it on</small></div>
+      </div>
+      <p class="lead">Future Proofing Lifestyle is not another course or guru. It's a movement of ordinary people refusing to be left unprepared — protecting themselves first, then their families, then the world. One person at a time, the tide turns.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-gold" href="https://futureproofinglifestyle.com">Visit Future Proofing Lifestyle →</a>
+        <a class="btn btn-ghost" href="https://fplfamilynetwork.com">The FPL Family Network</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="story">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">My story</div>
+      <h2>A report from the trenches</h2>
+    </div>
+    <div class="story">
+      <p>I was raised to inherit a family cotton business — and it collapsed before I could. I trained in textile technology, found early success in business, and lost it. Later ventures failed too. I have lived the whole spectrum: abundance and loss, the respect money buys and the respect it cannot.</p>
+      <blockquote>"Money felt like proof, respect felt like safety, success felt like survival. I wasn't chasing luxury — I was chasing legitimacy."</blockquote>
+      <p>The turning point wasn't a bigger answer to "how do I make more money?" It was a different question entirely: <b>what must I become?</b> Everything I write and build now flows from that question.</p>
+      <p>Today I'm rebuilding from almost nothing — and charging nothing while I do. The books, the movement, the mission: none of it is a lesson from a pedestal. It's a rescue mission. My own — and, if you want it, yours too.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="youtube">
+  <div class="wrap">
+    <div class="ctaband">
+      <div class="eyebrow">Watch</div>
+      <h2>Future Proofing Lifestyle on YouTube</h2>
+      <p>Ideas from the books, the movement and the mission — in plain language, free, every week.</p>
+      <a class="btn btn-gold" href="https://www.youtube.com/@FutureProofingLifestyle">Watch on YouTube →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fmission">Create · Protect · Transfer — Happiness · Health · Wealth</div>
+    <div style="margin:10px 0">
+      <a href="#books">The Books</a> · <a href="#movement">The Movement</a> · <a href="#story">My Story</a> · <a href="#youtube">YouTube</a>
+    </div>
+    <div style="margin:0 0 10px">
+      <a href="https://futureproofinglifestyle.com/terms.html">Terms &amp; Conditions</a> · <a href="https://futureproofinglifestyle.com/privacy.html">Privacy Policy</a> · <a href="https://futureproofinglifestyle.com/refund.html">Cancellation &amp; Refunds</a> · <a href="https://futureproofinglifestyle.com/contact.html">Contact</a>
+    </div>
+    © <span id="yr">2026</span> Omjai Venkat · Future Proofing Lifestyle Network
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
